@@ -19,7 +19,7 @@ import java.util.Map;
 @Api(tags = "测试接口")
 @RestController
 @RequestMapping("/api/acl/index")
-@CrossOrigin //跨域
+//@CrossOrigin //跨域
 public class ApiController {
     @ApiOperation("测试")
     @PostMapping("/login")

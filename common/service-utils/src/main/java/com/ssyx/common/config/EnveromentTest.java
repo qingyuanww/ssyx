@@ -38,8 +38,8 @@ public class EnveromentTest implements ApplicationListener<ApplicationEnvironmen
             dataBaseSource.forEach((k,v)->{
                 System.out.println("------>"+v.getValue());
             });
-            String applicationName = String.valueOf(dataBaseSource.get("spring.application.name").getValue());
-            String newName =applicationName+"666";
+//            String applicationName = String.valueOf(dataBaseSource.get("spring.application.name").getValue());
+//            String newName =applicationName+"666";
 
             if(ps instanceof OriginTrackedMapPropertySource){
                 OriginTrackedMapPropertySource propertySource = new OriginTrackedMapPropertySource(ps.getName(),map);
@@ -85,9 +85,9 @@ public class EnveromentTest implements ApplicationListener<ApplicationEnvironmen
             dataBaseSource.forEach((k,v)->{
                 System.out.println("------>"+v.getValue());
             });
-            String url = String.valueOf(dataBaseSource.get("spring.application.name").getValue());
-            String user = String.valueOf(dataBaseSource.get("spring.datasource.username").getValue());
-            String password = String.valueOf(dataBaseSource.get("spring.datasource.password").getValue());
+//            String url = String.valueOf(dataBaseSource.get("spring.application.name").getValue());
+//            String user = String.valueOf(dataBaseSource.get("spring.datasource.username").getValue());
+//            String password = String.valueOf(dataBaseSource.get("spring.datasource.password").getValue());
             // 因为在spring初始化之前 所有不能使用注解 所以需要jdbc直接连接数据库 首先建立驱动
         }
     }
